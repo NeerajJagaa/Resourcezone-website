@@ -1,0 +1,235 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+  
+*{
+    border: border-box;
+    
+}
+/* header style start*/
+.header{
+    display: none;
+}
+.nav-bar{
+    z-index: 1000;
+    height: 70px;
+    width: 100%;
+    background-image:linear-gradient(to left, #4b0082, #800080, #ff69b4);
+    /* background-image:linear-gradient(to bottom, #ff9933, #ffffff, #128807); */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position:absolute;
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    /* overflow-block: hidden; */
+    z-index: 1000;      /* Your other styles for nav-bar */ 
+}
+
+.nav-logo{
+    width: 30%;
+    align-items: center;
+    display: flex;
+    margin-left: 5%;
+}
+.logo-img{
+    height: 60px;
+    width: 100px;
+}
+.logo-img:hover{
+    transition: 0.5s;
+    scale: 1.1;
+    rotate: 360deg; 
+}
+.logo-icon{
+    height: 60px;
+    background-image: url(images/Zone.png);
+    /* width: 100%; */
+    background-size: cover;
+}
+
+.nav-button{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+#button1 a:hover{
+    color: blue;
+}
+
+.nav-button a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+}
+
+#button1:hover{
+    text-decoration: underline 2px rgb(188, 208, 59);
+    
+}
+
+/*rahul code start*/
+
+
+
+.dropdowns {
+    position: relative;
+    display: inline-block;
+    /* justify-content: space-evenly; */
+}
+
+/* Style the button that toggles the dropdown */
+.dropdowns-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+/* Style the dropdown menu */
+.dropdowns-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Style the dropdown menu items */
+.dropdowns-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown menu items on hover */
+.dropdowns-content a:hover {
+    background-color: #ddd;
+   
+}
+
+/* Show the dropdown menu when the button is hovered */
+.dropdowns:hover .dropdowns-content {
+    display: block;
+}
+
+ /* Style the dropdown container */
+
+ .dropdowns {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the button that toggles the dropdown */
+.dropdowns-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Style the dropdown menu */
+.dropdowns-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Style the dropdown menu items */
+.dropdowns-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown menu items on hover */
+.dropdowns-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu when the button is hovered */
+.dropdowns:hover .dropdowns-content {
+    display: block;
+}
+/*rahul code end*/
+
+
+
+/*header style end*/
+
+/*footer style start*/
+
+#mobile-contact-us{
+    display: none;
+}
+footer{
+    margin-top: 50px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+}
+
+.footer-home a{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.footer-content{
+    background-color: #222f3d;
+    color: white;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer-content li{
+    padding-bottom: 4px;
+
+}
+.footer-content li img{
+    height: 50px;
+    width: 50px;
+}
+.app li a{
+    color: yellow;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+.footer-content a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.footer-copyright{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*footer style end*/

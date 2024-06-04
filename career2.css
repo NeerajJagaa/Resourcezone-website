@@ -1,0 +1,139 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root{
+    --primary-color:white;
+    --secondry-color3: #212121;
+    --primary-color2: linear-gradient(to right, #141e30, #243b55);
+  }
+  .dark-theme{
+     --primary-color: #212121;
+     --secondry-color3:white;
+     --primary-color2:#212121;
+  }
+
+
+/* * {
+    margin: 0;
+    padding: 0;
+   
+
+} */
+
+.career_page {
+    height: 70vh;
+    width: 100%;
+    color: white;
+    background: var(--primary-color2);
+}
+.career_page .navbar {
+    height: 17vh;
+    width: 100%;
+}
+
+.heading-container {
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    padding: 4rem 0;
+}
+
+.heading-container h1 {
+    font-size: 4em;
+    font-family: monospace;
+    margin-top: 6rem;
+}
+
+.heading-container a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #ffff;
+}
+
+.heading-container a span {
+    margin-left: 0.4rem;
+    border-radius: 50%;
+    background: #ffff;
+    padding: 0.1rem 0.4rem;
+    color: #000;
+}
+
+/* this is about container  */
+.about-container {
+    min-height: 70vh;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+.about-container div {
+    height: 75%;
+    width: 45%;
+}
+
+.about-section {
+    height: auto;
+    width: 100%;
+}
+.about{
+    color: var(--secondry-color3);
+}
+
+.job-opening {
+    min-height: 80vh;
+    width: 100%;
+    background: var(--primary-color);
+    padding: 2rem;
+}
+.current-opportunities{
+    color: var(--secondry-color3);
+}
+.cards-container {
+    width: 85vw;
+    min-height: 60vh;
+    margin: 3.5rem auto;
+}
+.companyImage{
+    height:30vh;
+}
+.cards-container .card {
+    height: 100%;
+    padding: 2rem 0;
+    margin-top: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.cards-container .card .btn {
+    color: var(--primary-color);
+    margin-top: 1rem;
+}
+
+.card:hover{
+    transition: 0.5s;
+    scale: 1.1;
+
+    background-image: linear-gradient(to left, rgb(147, 137, 255),rgb(254, 161, 161));
+    transition:1s;
+    
+}
+.carreer-last-p{
+    color: var(--secondry-color3);
+}
+
+.card{
+ block-size: max-content;
+}
+
+
+#mailofID{
+    font-size: 37px;
+}
+.youtube-video-container1{
+    display: none;
+}
+.youtube-video-container{
+    display: block;
+}
+
+

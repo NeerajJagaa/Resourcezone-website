@@ -1,0 +1,488 @@
+/* side bar section starts  */
+
+::-webkit-scrollbar {
+    width: 12px;
+    /* Width of the scrollbar */
+}
+
+  /* Customize the scrollbar track */
+  ::-webkit-scrollbar-track {
+    background-color: var(--secondry-color); /* Track color */
+  }
+/* Customize the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 10px;
+    /* Rounded corners for the thumb */
+}
+
+/* Customize the scrollbar track */
+::-webkit-scrollbar-track {
+    background-color: var(--secondry-color);
+    /* Track color */
+}
+
+.container {
+    display: flex;
+}
+
+.menu-icon {
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+
+}
+
+.bar {
+    width: 25px;
+    height: 2px;
+    background-color: orange;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background-image: linear-gradient(to left, #4b0082, #800080, #ff69b4);
+    overflow-x: hidden;
+    transition: 0.4s;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    color: #007bff;
+}
+
+.sidebar.active {
+    width: 250px;
+    left: 0;
+}
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.close-icon:hover {
+    color: #007bff;
+  }
+  img{
+       border: #000106;
+    border-radius: 10px;
+  }
+
+
+#icon {
+    width: 40px;
+    cursor: pointer;
+    margin-right: 100px;
+}
+
+/* dark mode css starts  */
+
+:root {
+    --primary-color: #fff;
+    --secondry-color: #212121;
+}
+
+.dark-theme {
+    --primary-color: #000106;
+    --secondry-color: #fff;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+
+body {
+    /* background-image:linear-gradient(to left, pink, orange, skyBLue); */
+}
+
+/* roadmap section start */
+
+.placements {
+    margin-top: 70px;
+    width: 100%;
+    height: 800px;
+    background-image: url(images/ppp_bg_images/R.jpeg);
+    background-size: cover;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 30px;
+}
+
+.placements h1 {
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+   text-decoration: underline;
+   color: #800080;
+}
+
+.roadmap-div1 button {
+    border: paleturquoise;
+    border-radius: 20px;
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.roadmap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* margin-top: 10rem; */
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0px 2rem 0px 2rem;
+    gap: 50px;
+    /* box-sizing: border-box;
+    box-shadow: 0 0 10px black; */
+}
+
+.roadmap-div1-content {
+    width: 400px;
+}
+
+.roadmap-div1-content img {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    margin-left: 25%;
+}
+
+.roadmap-div1-content h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+}
+
+.roadmap-div1-content p {
+    margin-left: 60px;
+    margin-right: 50px;
+}
+
+.roadmap-div1-content button {
+    /* border-radius: 30%; */
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.roadmap-div1-content button:hover {
+    background-color: orange;
+    transition: 0.5s;
+    scale: 1.1;
+}
+
+/* cheatsheet css starts  */
+.cheatsheets h1 {
+    text-align: center;
+    margin-top: 3rem;
+    color: var(--secondry-color);
+}
+
+.cheatsheet {
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* margin-top: 10rem; */
+    justify-content: center;
+    text-align: center;
+    margin: 0px 2rem 0px 2rem;
+    gap: 50px;
+    /* box-sizing: border-box;
+    box-shadow: 0 0 10px black; */
+    /* border: 10px; */
+    border: 5px solid blue;
+    background-color: lightgoldenrodyellow;
+}
+
+.cheatsheet-div1-content {
+    width: 400px;
+    margin: 20px 0px 20px 0px;
+}
+
+.cheatsheet-div1-content img {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    margin-left: 25%;
+}
+
+.cheatsheet-div1-content h2 {
+    margin-left: 60px;
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 800;
+    color: blue;
+}
+
+.cheatsheet-div1-content p {
+    margin-left: 60px;
+    margin-right: 50px;
+}
+
+.cheatsheet-div1-content button {
+    /* border-radius: 30%; */
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.cheatsheet-div1-content button:hover {
+    background-color: orange;
+    transition: 0.5s;
+    scale: 1.1;
+}
+
+/* coding potd css starts  */
+.code {
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 5%;
+    width: 90%;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.coding {
+    width: 100%;
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.platform {
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px var(--secondry-color);
+    padding: 10px;
+    /* margin-top: 20px; */
+    margin-left: 15%;
+    /* margin-bottom: 30px; */
+}
+
+.platform p {
+    text-align: center;
+    font-size: 18px;
+    color: brown;
+    font-weight: 700;
+}
+
+.platform button {
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 5px;
+
+}
+
+.platform button:hover {
+    background-color: orange;
+    transition: 0.25s;
+}
+
+/* projects css starts  */
+
+.project-idea h1 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--secondry-color);
+}
+
+.projects {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 5px solid darkmagenta;
+    border-radius: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-image: url(images/ppp_bg_images/BG7.jpg);
+    background-size: cover;
+}
+
+#project1 {
+    margin-left: 100px;
+}
+
+#project1 ul li {
+    margin-bottom: 10px;
+
+}
+
+#project1 ul li a {
+    text-decoration: none;
+    font-size: larger;
+    font-style: none;
+    display: block;
+    cursor: pointer;
+    background: linear-gradient(to left, blue, white, yellow);
+    color: blue;
+}
+
+.inline-link {
+    display: inline-block;
+    /* Make the hyperlink an inline-block element */
+    white-space: nowrap;
+    /* Prevent line breaks */
+    overflow: hidden;
+    /* Hide any overflowing content */
+    text-overflow: ellipsis;
+}
+
+/* theory subject starts */
+
+.theory-sub {
+    background-image: url(./images/theory-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 800px;
+    margin-top: 50px;
+}
+
+.subjects-heading {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--secondry-color);
+}
+
+.underline {
+    height: 3px;
+    margin-left: 45%;
+    background-color: blue;
+    width: 100px;
+}
+
+.subjects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.subject {
+    margin-left: 30%;
+    margin-top: 50px;
+    /* margin-right: 10%; */
+}
+
+.subject p {
+    font-size: 18px;
+    font-weight: 700;
+    /* margin-left: 10px; */
+
+}
+
+.subject button {
+    font-size: 16px;
+    background-color: orange;
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 5px;
+    font-weight: bold;
+    width: 120px;
+    text-align: center;
+}
+
+.subject button:hover {
+    background-color: dodgerblue;
+}
+
+/* other-resources css starts  */
+
+#other-resource-heading {
+    text-align: center;
+    margin-top: 50px;
+    color: var(--secondry-color);
+}
+
+.other-resources {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.other-resource {
+    margin-left: 30%;
+    /* margin-right: 30%; */
+    margin-top: 50px;
+}
+
+.other-resource p {
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+.other-resource button {
+    font-size: 16px;
+    background-color: orange;
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 5px;
+    font-weight: bold;
+    width: 120px;
+    text-align: center;
+}
+
+.other-resource button:hover {
+    background-color: dodgerblue;
+}
